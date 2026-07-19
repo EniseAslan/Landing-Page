@@ -385,127 +385,129 @@ img {
     text-align: left;
 
 }
+
 /** FAQ **/
 
-.Faq{
+.Faq {
     background: var(--light);
     padding: 8rem 8%;
     height: 100vh;
     width: 100%;
 }
 
-.wrapper{
+.wrapper {
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:10rem;
-
-}
-
-
-.image-wrapper{
-
-    flex:1;
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
 
 }
 
-.image-inner img{
 
-    width:100%;
-    max-width:450px;
-    border-radius:20px;
-    display:block;
-    box-shadow:0 15px 30px rgba(0,0,0,.15);
+.image-wrapper {
 
-}
-
-.accordion-wrapper{
-
-    flex:1;
-    max-width:600px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
 
 }
 
-.title-accordion{
+.image-inner img {
 
-    font-size:4rem;
-    font-family:var(--primary-font);
-    margin-bottom:3rem;
-
-}
-
-.question-answer-accordion{
-
-    background:#fff;
-    border-radius:15px;
-    padding:2rem;
-    margin-bottom:2rem;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-}
-.questions{
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    cursor:pointer;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
 
 }
 
-.title-question{
+.accordion-wrapper {
 
-    font-size:1.8rem;
-    font-weight:600;
-    color:var(--dark);
-
-}
-
-.arrow{
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:2rem;
-    color:var(--primary);
+    flex: 1;
+    max-width: 600px;
 
 }
 
-.answer{
+.title-accordion {
 
-    display:none;
-    margin-top:1.5rem;
-    line-height:1.8;
-    font-size:1.6rem;
-    color:#555;
+    font-size: 4rem;
+    font-family: var(--primary-font);
+    margin-bottom: 3rem;
 
 }
 
-.question-answer-accordion.active .answer{
+.question-answer-accordion {
 
-    display:block;
-
-}
-
-.question-answer-accordion.active .arrow{
-
-    transform:rotate(180deg);
+    background: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
 
 }
 
-.arrow{
+.questions {
 
-    transition:.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 
 }
 
-.question-answer-accordion:hover{
+.title-question {
 
-    transform:translateY(-4px);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--dark);
 
-    transition:.3s;
+}
+
+.arrow {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--primary);
+
+}
+
+.answer {
+
+    display: none;
+    margin-top: 1.5rem;
+    line-height: 1.8;
+    font-size: 1.6rem;
+    color: #555;
+
+}
+
+.question-answer-accordion.active .answer {
+
+    display: block;
+
+}
+
+.question-answer-accordion.active .arrow {
+
+    transform: rotate(180deg);
+
+}
+
+.arrow {
+
+    transition: .3s;
+
+}
+
+.question-answer-accordion:hover {
+
+    transform: translateY(-4px);
+
+    transition: .3s;
 
 }
 
@@ -513,40 +515,183 @@ img {
 
 /* Responsive */
 
-@media(max-width:992px){
+@media(max-width:992px) {
 
-    .wrapper{
+    .wrapper {
 
-        flex-direction:column;
+        flex-direction: column;
 
     }
 
-    .accordion-wrapper{
+    .accordion-wrapper {
 
-        width:100%;
+        width: 100%;
 
     }
 
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-    .image-inner img{
+    .image-inner img {
 
-        max-width:300px;
-
-    }
-
-    .title-accordion{
-
-        text-align:center;
+        max-width: 300px;
 
     }
 
-    .title-question{
+    .title-accordion {
 
-        font-size:1.6rem;
+        text-align: center;
 
     }
 
+    .title-question {
+
+        font-size: 1.6rem;
+
+    }
+
+}
+
+/*Contact*/
+
+.contact-container {
+    background: var(--secondary);
+    width: 100%;
+    height: 114vh;
+    padding: 4rem 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    max-width: 1100px;
+    width: 100%;
+    min-height: 500px;
+}
+
+.contact-info {
+    background: var(--primary);
+    color: #fff;
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.contact-info h3 {
+    font-family: var(--primary-font);
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-info i {
+    width: 2.5rem;
+    color: var(--secondary);
+}
+
+.contact-form {
+    background-image: url("../assets/image/coffee-contact.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 3rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form form {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 251, 251, 0.9);
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(255, 114, 114, 0.1);
+}
+
+.contact-form .title {
+    font-family: var(--primary-font);
+    font-size: 2.4rem;
+    color: var(--dark);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.input-container .input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 0;
+    border: none;
+    border-bottom: 2px solid #6c6868;
+    background: transparent;
+    font-size: 1.6rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-container .input:focus {
+    border-bottom-color: var(--primary);
+}
+
+.input-container label {
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    font-size: 1.4rem;
+    color: var(--text);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-container .input:focus~label,
+.input-container .input:not(:placeholder-shown)~label {
+    top: -1.5rem;
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.input-container textarea.input {
+    resize: vertical;
+    min-height: 80px;
+
+}
+
+.btn {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.btn:hover {
+    background: var(--dark);
+    transform: scale(1.02);
 }
