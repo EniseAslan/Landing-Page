@@ -32,8 +32,28 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            alert('Mesajınız başarıyla gönderildi! Teşekkür ederiz.');
+            alert('Mesajınız başarıyla gönderildi!');
             form.reset();
         });
     }
+});
+
+const hamburger = document.querySelector('.hamburger');
+const navList = document.querySelector('.nav-list');
+const body = document.body;
+
+if (hamburger && navList) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');  
+        navList.classList.toggle('open');      
+       
+    });
+}
+
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navList.classList.remove('open');
+        body.classList.remove('no-scroll');
+    });
 });

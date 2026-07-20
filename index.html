@@ -14,34 +14,38 @@
     <header class="hero-header">
 
         <nav class="nav">
-            <div class="logo">
+    <div class="logo">
+        <a href="#"> <img src="./assets/image/logo.png" alt="Coffee Logo"></a>
+    </div>
 
-                <a href="#"> <img src="./assets/image/logo.png" alt="Coffee Logo"></a>
+    <!-- HAMBURGER BUTONU -->
+    <button class="hamburger" aria-label="Menüyü aç/kapa" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
 
-            </div>
-            <div>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#hero" aria-label="Scroll down to Hero section" class="nav-link">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#services" aria-label="Scroll down to Services section" class="nav-link">SERVICES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" aria-label="Scroll down to About section" class="nav-link">ABOUT</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#faq" aria-label="Scroll down to Faq section" class="nav-link">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" aria-label="Scroll down to Contact section" class="nav-link">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-
-
-        </nav>
+    <div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#hero" aria-label="Scroll down to Hero section" class="nav-link">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a href="#services" aria-label="Scroll down to Services section" class="nav-link">SERVICES</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" aria-label="Scroll down to About section" class="nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a href="#faq" aria-label="Scroll down to Faq section" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" aria-label="Scroll down to Contact section" class="nav-link">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    
 
         <!--HERO-->
         <section class="hero" id="hero">
@@ -306,7 +310,7 @@
 
 
             <div class="contact-form">
-                <form action="#" id="contactForm">
+                <form action="#" method="post" id="contactForm">
                     <h3 class="title">Bize Yazın</h3>
                     <div class="input-container">
                         <input type="text" name="name" id="name" class="input" placeholder=" " required>
@@ -329,6 +333,40 @@
             </div>
         </div>
     </section>
+
+    <!--Footer-->
+  
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copy-right">
+                    <p> Coffee</p>
+                </div>
+                <div class="social-media">
+                    <h4>Follow Us</h4>
+                    <ul class="social-list">
+                        <li>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter" style="color: rgb(253, 253, 253);"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="İnstagram"><i class="fa-brands fa-instagram" style="color: rgb(243, 242, 242);"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="back-top">
+                    <a href="#" aria-label="back to top"> <i class="fa-solid fa-angle-up fa-2xl"
+                            style="color: rgb(228, 230, 234);"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!--END FOOTER-->
+    
+
     <script src="./Js/script.js"></script>
 
 </body>
