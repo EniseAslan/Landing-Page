@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const questions = document.querySelectorAll(".questions");
 
     function toggleAccordion(question) {
-        const accordion = question.closest('.faq-item');
+        const accordion = question.closest('.question-answer-accordion');
         const isOpen = accordion.classList.toggle("active");
         question.setAttribute("aria-expanded", isOpen);
     }
@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (!hamburger || !navList) return;
 
-    // Menüyü aç/kapa
     function toggleMenu() {
         const isOpen = hamburger.classList.toggle('active');
         navList.classList.toggle('open');
@@ -65,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburger.setAttribute('aria-expanded', isOpen);
     }
 
-    // Menüyü kapat
     function closeMenu() {
         hamburger.classList.remove('active');
         navList.classList.remove('open');
@@ -73,10 +71,8 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburger.setAttribute('aria-expanded', 'false');
     }
 
-    // Hamburger tıklama
     hamburger.addEventListener('click', toggleMenu);
 
-    // Link tıklama - menüyü kapat
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', closeMenu);
     });
